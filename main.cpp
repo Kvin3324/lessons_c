@@ -17,6 +17,81 @@ int main()
 {
 
   // ******************************************
+
+    // LOOP
+
+    for (int compteur(0); compteur < 10; compteur++)
+    {
+      cout << compteur << endl;
+    }
+    return 0;
+
+
+    int nbEnfants(-1);
+    do
+    {
+      cout << "Combien d'enfants avez-vous ?" << endl;
+      cin >> nbEnfants;
+    } while (nbEnfants < 0);
+
+    cout << "Merci d'avoir indiqué un nom d'enfants correct. Vous en avez " << nbEnfants << endl;
+    return 0;
+
+    while (nbEnfants < 0)
+    {
+      cout << "Combien d'enfants avez-vous ?" << endl;
+      cin >> nbEnfants;
+    }
+
+    cout << "Merci d'avoir indiqué un nom d'enfants correct. Vous en avez " << nbEnfants << endl;
+    return 0;
+
+
+
+    // CONDITION
+      switch (nbEnfants)
+      {
+      case 0:
+        cout << "Vous avez des enfants, bravo !" << endl;
+        break;
+      case 1:
+        cout << "Alors, c'est pour quand le deuxième ?" << endl;
+        break;
+      case 2:
+        cout << "Quels beaux enfants que vous avez là !!" << endl;
+        break;
+
+      default:
+        cout << "Fin du programme" << endl;
+        break;
+      }
+      return 0;
+
+
+      if (nbEnfants > 0)
+      {
+        cout << "Vous avez des enfants, bravo !" << endl;
+      }
+      else if (nbEnfants == 1)
+      {
+        cout << "Alors, c'est pour quand le deuxième ?" << endl;
+      }
+      else if (nbEnfants == 2)
+      {
+        cout << "Quels beaux enfants que vous avez là !!" << endl;
+      }
+      else
+      {
+        cout << "Bon, il faut arrêter de se reproduire" << endl;
+      }
+
+      cout << "Fin du programme" << endl;
+
+      return 0;
+  // ******************************************
+
+
+  // ******************************************
     // MORE MATH
 
     double nombre(0);
